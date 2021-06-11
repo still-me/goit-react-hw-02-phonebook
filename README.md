@@ -4,7 +4,7 @@
 
 ✅ Настройка pre-commit хуков
 
-1.  Установка зависимостей. Установить в проект следующие пакеты.
+1. Установка зависимостей. Установить в проект следующие пакеты.
 
          npm install --save-dev prettier eslint
 
@@ -13,8 +13,8 @@
 
           npx mrm lint-staged
 
-❗️ если ошибка, используй
-
+ ❗️ если ошибка, используй 
+ 
           npx mrm@2 lint-staged
 
 3.  Настройки VSCode
@@ -30,24 +30,24 @@
 
 ✅ Деплой на GitHub Pages
 
-1.  Выполнить команду :
+1. Выполнить команду :
 
           npm run build
 
-2.  В package.json добавляем :
+2. В package.json добавляем :
 
           "private": true,
          ➕ "homepage": "https://still-me.github.io/имя_репозитория",
 
-3.  Еще раз выполнить команду:
+3. Еще раз выполнить команду:
 
           npm run build
-
-4.  Установить пакет gh-pages выполнив команду:
+          
+5. Установить пакет gh-pages выполнив команду:
 
           npm install --save gh-pages
-
-5.  добавить скрипты
+          
+8. добавить скрипты
 
          "scripts": {
          ➕ "predeploy": "npm run build",
@@ -55,25 +55,25 @@
          "start": "react-scripts start",
          "build": "react-scripts build",
 
-6.  Для отправки на Githab выполнить команду
-
+6. Для отправки на Githab выполнить команду
+ 
           npm run deploy
 
 ✅ Установить normalize
 
 1. установить пакет
 
-   npm install modern-normalize
+       npm install modern-normalize
+       
+3. подключить в index.js
 
-2. подключить в index.js
-
-   import 'modern-normalize/modern-normalize.css';
+       import 'modern-normalize/modern-normalize.css';
 
 ✅ Оптимизированный путь к папкам SCSS
 
 1. Создать файл .env
 2. путь SASS_PATH=node_modules:src
 
-❗️ При ошибке "cannot find module 'sass'", используй
+❗️ При ошибке "cannot find module 'sass'", используй 
 
       - npm add node-sass
